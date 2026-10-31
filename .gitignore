@@ -1,0 +1,19 @@
+# IDE & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs & Temp
+*.log
+tmp/
+temp/
+
+# Environment / Local Overrides
+*.env
+config.local.php

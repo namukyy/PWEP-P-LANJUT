@@ -1,0 +1,183 @@
+/* Custom Stylesheet - Web Pencarian Kost Trini */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --secondary-color: #0ea5e9;
+    --dark-color: #0f172a;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+    --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%);
+    color: white;
+    padding: 70px 0 90px;
+    position: relative;
+    border-radius: 0 0 30px 30px;
+}
+
+.search-box {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15);
+    margin-top: -45px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Kost Card */
+.kost-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: var(--card-shadow);
+    transition: all 0.25s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kost-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.kost-image-wrapper {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+.kost-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.kost-card:hover .kost-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.badge-gender {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.badge-putra {
+    background-color: #0284c7;
+    color: white;
+}
+
+.badge-putri {
+    background-color: #db2777;
+    color: white;
+}
+
+.badge-campur {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.badge-featured {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: #f59e0b;
+    color: white;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.kost-price {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.facility-pill {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Detail Page */
+.detail-hero-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.spec-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    font-weight: 700;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1eb857;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    margin-top: 80px;
+}
+footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+footer a:hover {
+    color: #ffffff;
+}
