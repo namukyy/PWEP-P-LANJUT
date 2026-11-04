@@ -42,7 +42,9 @@ Pencarian Kost Trini/
 ├── config/
 │   └── database.php           # Koneksi database MySQL
 ├── database/
-│   └── kost_trini.sql         # Skema database & 8 Data Dummy
+│   ├── kost_trini_dummy.sql   # Data Dummy (8 kost untuk pengembangan saat ini)
+│   ├── kost_trini_real.sql    # Data Asli Survei (Kost Bu Eni, Pak Aan, Ibu Jila, dll)
+│   └── kost_trini.sql         # Default skema & data
 ├── includes/
 │   ├── header.php             # HTML head & library CDN
 │   ├── navbar.php             # Navigasi utama

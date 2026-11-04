@@ -181,7 +181,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="card border-0 shadow-sm rounded-4 sticky-top" style="top: 90px;">
                 <div class="card-body p-4">
                     <div class="mb-3">
-                        <span class="text-muted small">Harga Sewa Kamar</span>
+                        <span class="text-muted small">Mulai dari</span>
                         <div class="d-flex align-items-baseline gap-1">
                             <h3 class="fw-extrabold text-primary mb-0">Rp <?= number_format($kost['harga_per_bulan'], 0, ',', '.') ?></h3>
                             <span class="text-muted small">/ bulan</span>

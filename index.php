@@ -125,10 +125,10 @@ require_once __DIR__ . '/includes/navbar.php';
                 </label>
                 <select name="harga_max" class="form-select">
                     <option value="">Semua Harga</option>
-                    <option value="600000" <?= $harga_max == 600000 ? 'selected' : '' ?>>s/d Rp 600.000 (Hemat)</option>
-                    <option value="1000000" <?= $harga_max == 1000000 ? 'selected' : '' ?>>s/d Rp 1.000.000 (Standard)</option>
-                    <option value="1500000" <?= $harga_max == 1500000 ? 'selected' : '' ?>>s/d Rp 1.500.000 (AC)</option>
-                    <option value="2000000" <?= $harga_max == 2000000 ? 'selected' : '' ?>>s/d Rp 2.000.000 (Eksklusif)</option>
+                    <option value="500000" <?= $harga_max == 500000 ? 'selected' : '' ?>>s/d Rp 500.000 (Super Hemat)</option>
+                    <option value="650000" <?= $harga_max == 650000 ? 'selected' : '' ?>>s/d Rp 650.000 (Standard & Isian)</option>
+                    <option value="1000000" <?= $harga_max == 1000000 ? 'selected' : '' ?>>s/d Rp 1.000.000</option>
+                    <option value="1500000" <?= $harga_max == 1500000 ? 'selected' : '' ?>>s/d Rp 1.500.000</option>
                 </select>
             </div>
 

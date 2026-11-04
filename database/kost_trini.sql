@@ -1,6 +1,9 @@
 -- ========================================================
--- Database: kost_trini
+-- Database: kost_trini (DEFAULT: DATA DUMMY PENGEMBANGAN)
 -- Proyek: Web Pencarian Kost Trini (Sleman, DIY)
+-- Catatan:
+-- - File ini default berisi Data Dummy untuk pengembangan fitur.
+-- - Untuk Data Asli Survei Lapangan, lihat file: database/kost_trini_real.sql
 -- ========================================================
 
 CREATE DATABASE IF NOT EXISTS `kost_trini` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -109,20 +112,12 @@ INSERT INTO `kost` (`id`, `nama_kost`, `tipe`, `harga_per_bulan`, `alamat`, `are
 (8, 'Kost Melati Trini Cantik', 'Putri', 1100000, 'Jl. Ringroad Utara Gg. Trini Asri, Sinduadi, Mlati', 'Trini Sinduadi', '5 Menit ke UTY & MMTC', '3.5 x 4 m', 'Token Sendiri', 3, 15, 4.8, 'Kost putri fasilitas komplit: AC dingin, WiFi kencang, kamar mandi dalam, free refill air galon, dan fasilitas laundry gratis setiap minggu.', 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop&q=80', '6281234567808', 'Ibu Hj. Maryati', 1);
 
 -- Relasi Fasilitas untuk masing-masing kost
--- Kost 1: Putri Asri (WiFi, AC, KM Dalam, Kasur, Lemari, Parkir Motor, Dapur, CCTV, Kloset Duduk)
 INSERT INTO `kost_fasilitas` (`kost_id`, `fasilitas_id`) VALUES
 (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6), (1, 8), (1, 10), (1, 11),
--- Kost 2: Pondok Trini Barokah Putra (WiFi, Kasur, Lemari, Parkir Motor, Dapur, Akses 24 Jam)
 (2, 1), (2, 4), (2, 5), (2, 6), (2, 8), (2, 12),
--- Kost 3: Sinduadi Trini Residence (WiFi, AC, KM Dalam, Kasur, Lemari, Parkir Mobil, Parkir Motor, Dapur, Water Heater, CCTV, Kloset Duduk, Akses 24 Jam)
 (3, 1), (3, 2), (3, 3), (3, 4), (3, 5), (3, 6), (3, 7), (3, 8), (3, 9), (3, 10), (3, 11), (3, 12),
--- Kost 4: Griya Trini Utama Putra (WiFi, AC, KM Dalam, Kasur, Lemari, Parkir Motor, Dapur, Akses 24 Jam, CCTV)
 (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (4, 6), (4, 8), (4, 10), (4, 12),
--- Kost 5: Kost Muslimah Annisa Trini (Kasur, Lemari, Parkir Motor, Dapur, CCTV)
 (5, 4), (5, 5), (5, 6), (5, 8), (5, 10),
--- Kost 6: Gardenia Trini Premiere (Semua Fasilitas Lengkap 1 s/d 12)
 (6, 1), (6, 2), (6, 3), (6, 4), (6, 5), (6, 6), (6, 7), (6, 8), (6, 9), (6, 10), (6, 11), (6, 12),
--- Kost 7: Kost Pondok Hijau Mlati-Trini (WiFi, Kasur, Lemari, Parkir Motor, Akses 24 Jam)
 (7, 1), (7, 4), (7, 5), (7, 6), (7, 12),
--- Kost 8: Kost Melati Trini Cantik (WiFi, AC, KM Dalam, Kasur, Lemari, Parkir Motor, Dapur, CCTV, Kloset Duduk)
 (8, 1), (8, 2), (8, 3), (8, 4), (8, 5), (8, 6), (8, 8), (8, 10), (8, 11);
